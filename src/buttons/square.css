@@ -1,0 +1,30 @@
+.square {
+    color: #6060f8;
+    text-align: center;
+    height: 5em;
+    width: 5em;
+    font-size: 3em;
+    padding: 0.5em;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: lightgray;
+    transition-duration:0.5s;
+    transition-property: transform;
+    transform: scale(1.07);
+    transform-origin: center;
+    transform-box: fill-box;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.square:active {
+    background-color: #eceaea;
+    transition:0.2s;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    border: 2px solid black;
+}
