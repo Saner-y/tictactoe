@@ -2,9 +2,7 @@ import Square from "../buttons/square.jsx";
 import {useState} from "react";
 import './table.css';
 
-export default function Table() {
-    const [xIsNext, setXIsNext] = useState(true);
-    const [squares, setSquares] = useState(Array(9).fill(null));
+export default function Table({ xIsNext, squares, onPlay }) {
 
     function handleClick(i) {
         const nextSquares = squares.slice();
@@ -16,8 +14,7 @@ export default function Table() {
         } else {
             nextSquares[i] = 'O';
         }
-        setSquares(nextSquares);
-        setXIsNext(!xIsNext);
+        onPlay(nextSquares);
     }
 
     const winner = calculateWinner(squares);

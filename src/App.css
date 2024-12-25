@@ -1,0 +1,25 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.history button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #6060f8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.history button:hover {
+    background-color: #4d4dff;
+}
+
+.history button:active {
+    background-color: #3333ff;
+}
